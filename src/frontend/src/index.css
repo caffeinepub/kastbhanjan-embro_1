@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Poppins:wght@300;400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm off-white background */
+    --background: 0.96 0.012 75;
+    --foreground: 0.13 0.01 30;
+
+    /* Header cream */
+    --card: 0.94 0.025 70;
+    --card-foreground: 0.13 0.01 30;
+
+    --popover: 0.96 0.012 75;
+    --popover-foreground: 0.13 0.01 30;
+
+    /* Deep maroon primary */
+    --primary: 0.28 0.09 15;
+    --primary-foreground: 0.96 0.012 75;
+
+    --secondary: 0.91 0.03 70;
+    --secondary-foreground: 0.28 0.09 15;
+
+    --muted: 0.91 0.025 70;
+    --muted-foreground: 0.5 0.02 55;
+
+    /* Gold accent */
+    --accent: 0.72 0.1 75;
+    --accent-foreground: 0.13 0.01 30;
+
+    --destructive: 0.5 0.2 25;
+    --destructive-foreground: 0.98 0 0;
+
+    --border: 0.83 0.04 70;
+    --input: 0.88 0.03 70;
+    --ring: 0.72 0.1 75;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", sans-serif;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: "Playfair Display", serif;
+  }
+}
+
+/* Cart drawer animation */
+.cart-drawer {
+  transition: transform 0.3s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: oklch(0.93 0.02 70);
+}
+::-webkit-scrollbar-thumb {
+  background: oklch(0.6 0.05 30);
+  border-radius: 3px;
+}
