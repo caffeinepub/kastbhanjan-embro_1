@@ -14,7 +14,7 @@ const MOCK_PRODUCTS: Product[] = [
       "/assets/img-20260330-wa0027-019d3f06-cf72-7642-b869-7a916a698175.jpg",
     rating: 4.8,
     reviewCount: 0n,
-    inStock: true,
+    inStock: false,
   },
   {
     id: 2n,
@@ -27,7 +27,7 @@ const MOCK_PRODUCTS: Product[] = [
       "/assets/img-20260401-wa0005-019d4d1a-0193-7579-8cdf-471ced13f8d6.jpg",
     rating: 4.9,
     reviewCount: 0n,
-    inStock: true,
+    inStock: false,
   },
 ];
 
